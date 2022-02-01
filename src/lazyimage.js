@@ -30,7 +30,13 @@ const LazyImage = {
      */
     loadImage: function (image) {
 
-        image.src = (image.dataset.src || image.dataset.srcset);
+        var src = (image.dataset.src || image.dataset.srcset);
+
+        if (image instanceof HTMLImageElement) {
+            image.src = src;
+        } else {
+            image.style.backgroundImage = "url('" + src + "')";
+        }
 
         image.classList.remove('lazyloading');
         image.classList.add('lazyloaded');
