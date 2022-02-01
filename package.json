@@ -1,0 +1,26 @@
+{
+  "name": "@jacobfitzp/lazyimage",
+  "version": "1.0.0",
+  "description": "Image lazyloading",
+  "broswer": "./dist/lazyimage.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobFitzp/LazyImage.git"
+  },
+  "author": "Jacob Fitzpatrick <contact@jacobfitzp.co.uk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacobFitzp/LazyImage/issues"
+  },
+  "homepage": "https://github.com/JacobFitzp/LazyImage#readme",
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "@jacobfitzp/viewport-helper": "^1.1.2"
+  }
+}
